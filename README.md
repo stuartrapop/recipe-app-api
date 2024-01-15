@@ -11,5 +11,8 @@ docker compose run --rm app sh -c "flake8"
 #create django project via docker ?? a bit strange
 docker compose run --rm app sh -c "django-admin startproject app ."
 
+#create super users
+docker compose run --rm app sh -c "python manage.py createsuperuser"
+
 #docker up
 docker compose up
