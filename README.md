@@ -14,5 +14,8 @@ docker compose run --rm app sh -c "django-admin startproject app ."
 #create super users
 docker compose run --rm app sh -c "python manage.py createsuperuser"
 
+#create a new project within the app
+docker compose run --rm app sh -c "python manage.py startapp recipe"
+
 #docker up
 docker compose up
